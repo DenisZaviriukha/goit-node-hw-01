@@ -4,7 +4,7 @@ const fs = require("fs/promises");
 const path = require("path")
 const {nanoid} = require("nanoid");
 
-const booksPath = path.join(`${__dirname}/books.json`)
+const booksPath = path.join(`${__dirname}/contacts.json`)
 
 const listOfBooks = async () => {
     const data = await fs.readFile(booksPath, "utf-8")
